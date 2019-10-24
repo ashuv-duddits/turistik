@@ -9,7 +9,7 @@ deploy:
   on:
     branch: master
 before_install:
-- openssl aes-256-cbc -K $encrypted_0065b9512b02_key -iv $encrypted_0065b9512b02_iv
+- openssl aes-256-cbc -K $encrypted_1fc90f464345_key -iv $encrypted_1fc90f464345_iv
   -in deploy_rsa.enc -out $TRAVIS_BUILD_DIR/deploy_rsa -d
 addons:
    ssh_known_hosts: duddits.ru
