@@ -1,0 +1,10 @@
+language: php
+php:
+  - 7.2.19-0ubuntu0.18.04.2
+
+deploy:
+- provider: script
+  skip_cleanup: true
+  script: ".travis/deploy.sh"
+  on:
+    branch: master
