@@ -1,7 +1,7 @@
 <?php
-require_once 'PHPUnit/Autoload.php';
+include 'vendor/autoload.php';
 
-class MyClassTest extends \PHPUnit_Framework_TestCase {
+class MyClassTest extends \PHPUnit\Framework\TestCase {
   public function testPower()
   {
       $this->assertEquals(8, 8);
