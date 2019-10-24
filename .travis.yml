@@ -1,7 +1,7 @@
 language: php
 php:
   - 7.2.19
-script: phpunit Test.php
+script: bash install.sh
 
 dist: trusty
 
